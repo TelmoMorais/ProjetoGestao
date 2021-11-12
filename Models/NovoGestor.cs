@@ -12,8 +12,8 @@ namespace ProjetoGestao.Models
 
         [Required]
         [StringLength(512)]
-        public string Title { get; set; }
+        public string NomeGestor { get; set; }
 
-        public string Description { get; set; }
+        
     }
 }
