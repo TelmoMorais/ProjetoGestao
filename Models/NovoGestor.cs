@@ -13,7 +13,6 @@ namespace ProjetoGestao.Models
         [Required]
         [StringLength(512)]
         public string NomeGestor { get; set; }
-
-        
+        public ICollection<NovoProjeto> Projetos{ get; set; }
     }
 }
