@@ -17,5 +17,7 @@ namespace ProjetoGestao.Data
         public DbSet<ProjetoGestao.Models.NovoProjeto> NovoProjeto { get; set; }
 
         public DbSet<ProjetoGestao.Models.NovoGestor> NovoGestor { get; set; }
+
+        public DbSet<ProjetoGestao.Models.NovoColaborador> NovoColaborador { get; set; }
     }
 }
