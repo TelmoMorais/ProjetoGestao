@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using ProjetoGestao.Models;
+
+namespace ProjetoGestao.Data
+{
+    public class ProjetoGestaoContext : DbContext
+    {
+        public ProjetoGestaoContext (DbContextOptions<ProjetoGestaoContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<ProjetoGestao.Models.NovoProjeto> NovoProjeto { get; set; }
+    }
+}
