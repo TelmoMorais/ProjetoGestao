@@ -1,85 +1,171 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-/*---------------------------------------------------------------------------------------------------------------------*/
-/*Page About*/
-/*---------------------------------------------------------------------------------------------------------------------*/
 
-/*First Container*/
-.MarginCont1 {
-    margin-top: 2%;
+.MarginCont1PageAbout {
+    padding-top: 40px;
 }
 
-.AlignCont1Row1 {
-    padding-left: 2%;
-    padding-top: 17%;
-    padding-bottom: 7%;
+.Cont1PageAbout {
+    background-color: black;
+    color: white;
+    padding-bottom: 80px;
 }
 
-.ColorTitleCont1 {
-    color: rgb(255,193,7);
+.TitleCont1PageAbout {
+    font-size: 105px;
+    font-family: 'Road Rage', cursive;
+}
+.ColorTitleCont1PageAbout {
+    color: rgba(252,48,123, 1);
+}
+.ParagraphCont1PageAbout{
+    font-size: 23px;
+
+
 }
 
-.imgCont1 {
-    max-width: 100%;
-    height: auto;
+.buttons {
+    margin-top: 37px;
+    justify-content:space-between;
+}
+
+
+.btn--color1 {
+    background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
+    padding: 7px 25px;
+    font-size: 22px;
+    border-radius: 20px;
+    color: white;
     text-align: center;
+    font-family: 'Road Rage', cursive;
 }
 
-/*Second Container*/
-.videoContainer2 {
-    padding-top: 10%;
+.btn--color2 {
+    background: linear-gradient(104deg, #5fd9dd 0%, #2c92ef 100%);
+    padding: 7px 25px;
+    font-size: 22px;
+    border-radius: 20px;
+    color: white;
     text-align: center;
-    max-width: 100%;
-    height: auto;
-}
-
-/*Third Container*/
-.AlignContainer3 {
-    margin-top: 4%;
-    margin-bottom: 4%;
-    text-align: center;
-}
-
-.colorSubTitleContainer3 {
-    color: rgb(255,193,7);
+    margin-left: 40px;
+    font-family: 'Road Rage', cursive;
 }
 
 
-/*Fifth Container*/
-.AlignContainer5 {
-    margin-top: 4%;
-    margin-bottom: 4%;
-    text-align: center;
-}
-
-/*Sixth Container*/
-.ImgsContainer6 {
-    max-width: 50%;
-    height: auto;
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
     
+    padding: 10px;
 }
 
-.MarginTopContainer6 {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-/*Seventh Container*/
-.AlignContainer7 {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.PaddingContainer7 {
-    margin-top: 4%;
-    margin-bottom: 4%;
+.grid-item {
+   
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
+.gradient-text {
+    padding-top: 40px;
+    background-color: rgba(252,48,123, 1);
+    border-radius:50%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Road Rage', cursive;
+    padding: 35px;
+}
+
+/*Cont2*/
+
+.Cont2PageAbout {
+    background-color: black;
+    color: white;
+    font-family: 'Road Rage', cursive;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.TitleCont2PageAbout {
+    font-size: 60px;
+}
+
+.ParagraphCont2PageAbout {
+    font-size: 30px;
+}
+
+.Cont3PageAbout {
+    background-color: black;
+    color: white;
+    font-family: 'Road Rage', cursive;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/*Cont3*/
+.OurTeam {
+    max-width: 45%;
+    height: auto;
+    border: 3px solid rgba(252,48,123, 1);
+}
+
+.TitleCont3PageAbout {
+    font-size: 60px;
+}
+
+
+.TitleCont4PageAbout {
+    font-size: 80px;
+    color: rgba(252,48,123, 1);
+    text-align: center;
+    font-family: 'Road Rage', cursive;
+}
+
+.ParagraphCont4PageAbout {
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Road Rage', cursive;
+}
+
+
+.TitleCont5PageAbout {
+    font-size: 30px;
+    color: rgba(252,48,123, 1);
+    text-decoration: none;
+    font-family: 'Road Rage', cursive;
+}
+
+.btn--color3 {
+    background: linear-gradient(104deg, #5fd9dd 0%, #2c92ef 100%);
+    padding: 7px 25px;
+    font-size: 22px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Road Rage', cursive;
+}
+
+.MarginCont5PageAbout {
+    padding-top: 60px;
+    font-family: 'Road Rage', cursive;
+}
+
+.ParagraphCont5PageAbout {
+    font-size:26px;
+}
+
+.ColorPricingOptionsTitle {
+    color: #5FD9DD;
+}
+
+
+
+
+
+
 /*---------------------------------------------------------------------------------------------------------------------*/
-
-
 .input-validation-error {
     border-color: red;
 }
