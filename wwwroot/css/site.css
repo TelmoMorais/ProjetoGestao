@@ -1,7 +1,152 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/*Page Home*/
 
+.PageHome {
+    font-family: sans-serif;
+    color: white;
+}
+
+.hero {
+    width: auto;
+    height: auto;
+    background-image: url(../Imagens/space.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.PaddingCont1PageHome {
+    padding-top: 200px;
+    padding-bottom: 210px;
+}
+
+.TitleCont1PageHome {
+    font-size: 60px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.button {
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.navs img {
+    width: 50px;
+    animation: nav 7s linear infinite;
+}
+
+.spacemanfallings img {
+    width: 50px;
+    animation: spacemanfalling 7s linear infinite;
+}
+
+.spacemanfallings {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes spacemanfalling {
+    0% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+.spacemanfallings img:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.spacemanfallings img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.navs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes nav {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.navs img:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.navs img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.navs img:nth-child(3) {
+    animation-delay: 3s;
+}
+
+
+
+.LastContPageHome {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.AddColorLastContPageHome {
+    color: rgba(252,48,123, 1);
+}
+
+.SecondSectionPageHome {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+/*Page About*/
 .MarginCont1PageAbout {
     padding-top: 40px;
 }
