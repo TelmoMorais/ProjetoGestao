@@ -14,6 +14,7 @@ namespace ProjetoGestao.Models
         [StringLength(512)]
         public string NomeProjeto { get; set; }
         public string DescricaoProjeto { get; set; }
+
         public int NovoGestorId { get; set; }
         public NovoGestor NovoGestor { get; set; }
         public ICollection<NovoColaborador> Colaboradors { get; set; }
