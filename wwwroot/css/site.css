@@ -6,6 +6,7 @@ for details on configuring this project to bundle and minify static web assets. 
 .PageHome {
     font-family: sans-serif;
     color: white;
+
 }
 
 .hero {
@@ -386,3 +387,11 @@ body {
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
 }
+
+black  {
+  background: #000;  
+}
+
+
+
+
