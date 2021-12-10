@@ -13,6 +13,36 @@ namespace ProjetoGestao.Models
         [Required]
         [StringLength(512)]
         public string NomeGestor { get; set; }
+
+        [Required]
+        [StringLength(512)]
+        public string Apelido { get; set; }
+
+        [Required]
+        [StringLength(9)]
+        public string NumeroTelemovel { get; set; }
+
+        [Required]
+        [RegularExpression(@"(\w+(\.\w+)*@[a-zA-Z_]+?\.[a-zA-Z]{2,6})",
+        ErrorMessage = "Endereço de email Incorreto")]
+        public string Email { get; set; }
+
+        [Required]
+        public string DataNascimento { get; set; }
+
+        [Required]
+        [StringLength(512)]
+        public string Genero { get; set; }
+
+        [Required]
+        [StringLength(512)]
+        public string Endereco { get; set; }
+
+        [Required]
+        [StringLength(512)]
+        public string ExperienciaComoGestor { get; set; }
+
+
         public ICollection<NovoProjeto> Projetos{ get; set; }
     }
 }
