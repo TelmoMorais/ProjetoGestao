@@ -28,8 +28,8 @@ namespace ProjetoGestao.Models
         public string DataPrevistaFim { get; set; }
 
 
-        public int NovoGestorId { get; set; }
-        public NovoGestor NovoGestor { get; set; }
-        public ICollection<NovoColaborador> Colaboradors { get; set; }
+        public int GestorId { get; set; }
+        public Gestor Gestor { get; set; }
+        public ICollection<ColaboradoresProjeto> ColaboradoresProjetos { get; set; }
     }
 }
