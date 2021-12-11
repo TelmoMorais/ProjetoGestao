@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 
 namespace ProjetoGestao.Models
 {
-    public class NovoProjeto
+    public class Projeto
     {
-        public int NovoProjetoId { get; set; }
+        public int ProjetoId { get; set; }
 
         [Required]
         [StringLength(512)]
         public string NomeProjeto { get; set; }
         public string DescricaoProjeto { get; set; }
+
+        [Required]
+        public string DataPrevistaInicio { get; set; }
+
+        [Required]
+        public string DataEfetivaInicio { get; set; }
+
+        [Required]
+        public string DataEfetivaFim { get; set; }
+
+        [Required]
+        public string DataPrevistaFim { get; set; }
+
+
         public int NovoGestorId { get; set; }
         public NovoGestor NovoGestor { get; set; }
         public ICollection<NovoColaborador> Colaboradors { get; set; }
