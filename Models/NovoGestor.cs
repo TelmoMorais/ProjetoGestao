@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjetoGestao.Models
 {
-    public class NovoGestor
+    public class Gestor
     {
-        public int NovoGestorId { get; set; }
+        public int GestorId { get; set; }
 
         [Required]
         [StringLength(512)]
@@ -37,6 +37,6 @@ namespace ProjetoGestao.Models
 
         public string ExperienciaComoGestor { get; set; }
 
-        public ICollection<NovoProjeto> Projetos{ get; set; }
+        public ICollection<Projeto> Projetos{ get; set; }
     }
 }

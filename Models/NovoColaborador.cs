@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjetoGestao.Models
 {
-    public class NovoColaborador
+    public class Colaborador
     {
-        public int NovoColaboradorId { get; set; }
+        public int ColaboradorId { get; set; }
 
         [Required]
         [StringLength(512)]
@@ -37,6 +37,6 @@ namespace ProjetoGestao.Models
 
         //Falta a tabela função e colocar a cahve estrangeira
 
-        public ICollection<NovoProjeto> Projetos { get; set; }
+        public ICollection<Projeto> Projetos { get; set; }
     }
 }
