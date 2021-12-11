@@ -37,6 +37,8 @@ namespace ProjetoGestao.Models
 
         //Falta a tabela função e colocar a cahve estrangeira
 
+        public int FuncaoId { get; set; }
+        public Funcao Funcao { get; set; }
         public ICollection<ColaboradoresProjeto> ColaboradoresProjetos { get; set; }
     }
 }
