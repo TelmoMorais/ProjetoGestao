@@ -30,6 +30,10 @@ namespace ProjetoGestao.Models
 
         public int GestorId { get; set; }
         public Gestor Gestor { get; set; }
+
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
+
         public ICollection<ColaboradoresProjeto> ColaboradoresProjetos { get; set; }
     }
 }
