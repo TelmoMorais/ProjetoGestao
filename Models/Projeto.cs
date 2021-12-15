@@ -34,6 +34,9 @@ namespace ProjetoGestao.Models
         public int ClienteId { get; set; }
         public Cliente Cliente { get; set; }
 
+        public int RelatorioId { get; set; }
+        public Relatorio Relatorio { get; set; }
+
         public ICollection<ColaboradoresProjeto> ColaboradoresProjetos { get; set; }
         public ICollection<Tarefa> Tarefas { get; set; }
     }
