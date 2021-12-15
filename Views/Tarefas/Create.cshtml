@@ -1,0 +1,67 @@
+﻿@model ProjetoGestao.Models.Tarefa
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tarefa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeTarefa" class="control-label"></label>
+                <input asp-for="NomeTarefa" class="form-control" />
+                <span asp-validation-for="NomeTarefa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataPrevistaInicio" class="control-label"></label>
+                <input asp-for="DataPrevistaInicio" class="form-control" />
+                <span asp-validation-for="DataPrevistaInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataEfetivaInicio" class="control-label"></label>
+                <input asp-for="DataEfetivaInicio" class="form-control" />
+                <span asp-validation-for="DataEfetivaInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataEfetivaFim" class="control-label"></label>
+                <input asp-for="DataEfetivaFim" class="form-control" />
+                <span asp-validation-for="DataEfetivaFim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataPrevistaFim" class="control-label"></label>
+                <input asp-for="DataPrevistaFim" class="form-control" />
+                <span asp-validation-for="DataPrevistaFim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ColaboradorResponsavelTarefa" class="control-label"></label>
+                <input asp-for="ColaboradorResponsavelTarefa" class="form-control" />
+                <span asp-validation-for="ColaboradorResponsavelTarefa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoTarefa" class="control-label"></label>
+                <input asp-for="EstadoTarefa" class="form-control" />
+                <span asp-validation-for="EstadoTarefa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjetoId" class="control-label"></label>
+                <select asp-for="ProjetoId" class ="form-control" asp-items="ViewBag.ProjetoId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
