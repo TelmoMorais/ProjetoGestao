@@ -33,6 +33,9 @@ namespace ProjetoGestao.Data
 
         //public DbSet<ProjetoGestao.Models.Relatorio> Relatorio { get; set; }
         public DbSet<ProjetoGestao.Models.Tarefa> Tarefa { get; set; }
+
+        //public DbSet<ProjetoGestao.Models.Relatorio> Relatorio { get; set; }
+        public DbSet<ProjetoGestao.Models.Relatorio> Relatorio { get; set; }
     }
 }
 
