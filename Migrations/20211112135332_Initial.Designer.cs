@@ -8,7 +8,7 @@ using ProjetoGestao.Data;
 
 namespace ProjetoGestao.Migrations
 {
-    [DbContext(typeof(ProjetoGestaoContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20211112135332_Initial")]
     partial class Initial
     {
