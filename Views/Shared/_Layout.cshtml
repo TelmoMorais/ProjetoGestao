@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link"  asp-area="" asp-controller="Home" asp-action="Sobre">About</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Sobre">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Minha Conta</a>
@@ -40,10 +40,11 @@
                     </ul>
                 </div>
             </div>
-        </nav>   
+        </nav>
     </main>
 
-            @RenderBody()
+    @RenderBody()
+    @RenderSection("scripts", required: false)
 
     <footer class="bg-dark py-4 mt-auto">
         <div class="container px-5">
@@ -81,10 +82,10 @@
     </script>
 
     @*<script type="text/javascript">window.addEventListener("scroll", function () {
-            var main = document.querySelector("main");
-            main.classList.toggle("sticky", window.scrollY > 0);
-        }
-    </script>*@
+                var main = document.querySelector("main");
+                main.classList.toggle("sticky", window.scrollY > 0);
+            }
+        </script>*@
 
 </body>
 </html>

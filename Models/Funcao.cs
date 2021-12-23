@@ -8,6 +8,7 @@ namespace ProjetoGestao.Models
 {
     public class Funcao
     {
+
         public int FuncaoId { get; set; }
 
         [Required]
