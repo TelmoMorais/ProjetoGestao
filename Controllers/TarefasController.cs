@@ -48,7 +48,7 @@ namespace ProjetoGestao.Controllers
         // GET: Tarefas/Create
         public IActionResult Create()
         {
-            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "NomeProjeto");
+            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ProjetoGestao.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "NomeProjeto", tarefa.ProjetoId);
+            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", tarefa.ProjetoId);
             return View(tarefa);
         }
 
@@ -82,7 +82,7 @@ namespace ProjetoGestao.Controllers
             {
                 return NotFound();
             }
-            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "NomeProjeto", tarefa.ProjetoId);
+            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", tarefa.ProjetoId);
             return View(tarefa);
         }
 
@@ -118,7 +118,7 @@ namespace ProjetoGestao.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "NomeProjeto", tarefa.ProjetoId);
+            ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", tarefa.ProjetoId);
             return View(tarefa);
         }
 

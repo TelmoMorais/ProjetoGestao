@@ -17,17 +17,16 @@ namespace ProjetoGestao.Models
         [Required]
         public string DataPrevistaInicio { get; set; }
 
-     
+        [Required]
         public string DataEfetivaInicio { get; set; }
 
-       
+        [Required]
         public string DataEfetivaFim { get; set; }
 
         [Required]
         public string DataPrevistaFim { get; set; }
 
         public string ColaboradorResponsavelTarefa { get; set; }
-        public Colaborador Colaborador { get; set; }
         public string EstadoTarefa { get; set; }
 
         public int ProjetoId { get; set; }
