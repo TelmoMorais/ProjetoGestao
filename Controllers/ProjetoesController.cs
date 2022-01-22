@@ -49,8 +49,8 @@ namespace ProjetoGestao.Controllers
         // GET: Projetoes/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "Apelido");
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Apelido");
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "ClienteId");
+            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "GestorId");
             return View();
         }
 
