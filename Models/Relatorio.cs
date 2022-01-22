@@ -16,6 +16,8 @@ namespace ProjetoGestao.Models
         
         [Required]
         public string DataEfetivaInicio { get; set; }
+        [Required]
+        public string Comentarios { get; set; }
 
         public int ProjetoId { get; set; }
         public Projeto Projeto { get; set; }
