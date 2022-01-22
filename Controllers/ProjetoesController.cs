@@ -49,8 +49,8 @@ namespace ProjetoGestao.Controllers
         // GET: Projetoes/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "Apelido");
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Apelido");
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "ClienteId");
+            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "GestorId");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace ProjetoGestao.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "Apelido", projeto.ClienteId);
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Apelido", projeto.GestorId);
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "ClienteId", projeto.ClienteId);
+            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "GestorId", projeto.GestorId);
             return View(projeto);
         }
 
@@ -85,8 +85,8 @@ namespace ProjetoGestao.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "Apelido", projeto.ClienteId);
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Apelido", projeto.GestorId);
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "ClienteId", projeto.ClienteId);
+            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "GestorId", projeto.GestorId);
             return View(projeto);
         }
 
@@ -122,8 +122,8 @@ namespace ProjetoGestao.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "Apelido", projeto.ClienteId);
-            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Apelido", projeto.GestorId);
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "ClienteId", projeto.ClienteId);
+            ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "GestorId", projeto.GestorId);
             return View(projeto);
         }
 

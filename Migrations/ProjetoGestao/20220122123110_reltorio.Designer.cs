@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoGestao.Data;
 
 namespace ProjetoGestao.Migrations.ProjetoGestao
 {
     [DbContext(typeof(ProjetoGestaoContext))]
-    partial class ProjetoGestaoContextModelSnapshot : ModelSnapshot
+    [Migration("20220122123110_reltorio")]
+    partial class reltorio
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
