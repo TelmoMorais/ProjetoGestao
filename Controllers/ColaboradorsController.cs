@@ -119,7 +119,9 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Colaborador alterado";
+                ViewBag.Message = "Colaborador alterado com sucesso!";
+                return View("Sucesso");
             }
             ViewData["FuncaoId"] = new SelectList(_context.Funcao, "FuncaoId", "NomeFuncao", colaborador.FuncaoId);
             return View(colaborador);
