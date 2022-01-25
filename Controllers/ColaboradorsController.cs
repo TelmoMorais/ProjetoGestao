@@ -63,6 +63,9 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(colaborador);
                 await _context.SaveChangesAsync();
+
+                ViewBag.Title = "Colaborador criado";
+                ViewBag.Message = "Colaborador criado com sucesso!";
                 return View("Sucesso");
             }
             ViewData["FuncaoId"] = new SelectList(_context.Funcao, "FuncaoId", "NomeFuncao", colaborador.FuncaoId);
