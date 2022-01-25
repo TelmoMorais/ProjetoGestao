@@ -154,7 +154,10 @@ namespace ProjetoGestao.Controllers
             var colaborador = await _context.Colaborador.FindAsync(id);
             _context.Colaborador.Remove(colaborador);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            ViewBag.Title = "Colaborador eliminado";
+            ViewBag.Message = "Colaborador eliminado com sucesso!";
+            return View("Sucesso");
         }
 
         private bool ColaboradorExists(int id)
