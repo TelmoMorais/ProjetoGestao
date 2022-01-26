@@ -113,7 +113,9 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Gestor Editado";
+                ViewBag.Message = "Gestor Editado com Sucesso";
+                return View("Success");
             }
             return View(gestor);
         }
