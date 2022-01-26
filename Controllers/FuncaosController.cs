@@ -113,7 +113,9 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Função Editado";
+                ViewBag.Message = "Função Editada com Sucesso";
+                return View("Success");
             }
             return View(funcao);
         }

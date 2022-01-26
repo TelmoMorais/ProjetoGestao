@@ -113,7 +113,9 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Cliente Editado";
+                ViewBag.Message = "Cliente Editado com Sucesso";
+                return View("Success");
             }
             return View(cliente);
         }
