@@ -92,14 +92,22 @@
                 <!--Space from left side-->
             </div>
             <div class="col-sm-10 pt-4">
-                <div class="grid-container">
-                    <div class="grid-item GridCont1PageAbout"><a href="#" class="gradient-text">Projetos</a></div>
-                    <div class="grid-item GridCont1PageAbout"><a class="gradient-text"  asp-area="" asp-controller="Colaboradors" asp-action="Index">Colaboradores</a></div>
-                    <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></div>
-                    <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Gestors" asp-action="Index">Gestores</a></div>
-                    <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Funcaos" asp-action="Index">Função</a></div>
-                    <div class="grid-item GridCont1PageAbout"><a href="#team" class="gradient-text">Equipa</a></div>
-                </div>
+                <!--
+    <div class="grid-container">
+        <div class="grid-item GridCont1PageAbout"><a href="#" class="gradient-text">Projetos</a></div>
+        <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Colaboradors" asp-action="Index">Colaboradores</a></div>
+        <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></div>
+        <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Gestors" asp-action="Index">Gestores</a></div>
+        <div class="grid-item GridCont1PageAbout"><a class="gradient-text" asp-area="" asp-controller="Funcaos" asp-action="Index">Função</a></div>
+        <div class="grid-item GridCont1PageAbout"><a href="#team" class="gradient-text">Equipa</a></div>
+    </div>
+        Space from left side-->
+                <a href="#" class="btn btn-warning">Projetos</a>
+                <a asp-controller="Colaboradors" asp-action="Index" class="btn btn-warning">Colaboradores</a>
+                <a asp-controller="Clientes" asp-action="Index" class="btn btn-warning">Clientes</a>
+                <a asp-controller="Gestors" asp-action="Index" class="btn btn-warning">Gestores</a>
+                <a asp-controller="Funcaos" asp-action="Index" class="btn btn-warning">Função</a>
+                <a href="#team" class="btn btn-warning">Equipa</a>
             </div>
             <div class="col-sm-1">
                 <!--Space from right side-->
