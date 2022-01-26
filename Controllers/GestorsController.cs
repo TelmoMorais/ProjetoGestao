@@ -60,7 +60,9 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(gestor);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Gestor Adicionado";
+                ViewBag.Message = "Gestor Adicionado com  Sucesso";
+                return View("Success");
             }
             return View(gestor);
         }
