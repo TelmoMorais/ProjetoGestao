@@ -5,7 +5,7 @@
 }
 
 <h4 class="mt-5">Eliminar Cliente</h4>
-<h3>Tem a certeza que pretende eliminar?</h3>
+<h3 class="text-danger">Tem a certeza que pretende eliminar?</h3>
 <div>
     <hr />
     <dl class="row">
@@ -50,6 +50,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="ClienteId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>

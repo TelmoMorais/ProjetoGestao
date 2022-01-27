@@ -146,7 +146,9 @@ namespace ProjetoGestao.Controllers
             var funcao = await _context.Funcao.FindAsync(id);
             _context.Funcao.Remove(funcao);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            ViewBag.Title = "Função Eliminada";
+            ViewBag.Message = "Função Eliminada com Sucesso.";
+            return View("Success");
         }
 
         private bool FuncaoExists(int id)
