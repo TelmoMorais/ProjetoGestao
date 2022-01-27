@@ -18,10 +18,10 @@ namespace ProjetoGestao.Models
         [Required]
         public string DataPrevistaInicio { get; set; }
 
-        [Required]
+        
         public string DataEfetivaInicio { get; set; }
 
-        [Required]
+        
         public string DataEfetivaFim { get; set; }
 
         [Required]
