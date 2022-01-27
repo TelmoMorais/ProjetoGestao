@@ -63,7 +63,10 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(relatorio);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                ViewBag.Title = "Relatório Adicionado";
+                ViewBag.Message = "Relatório Adicionado com Sucesso";
+                return View("Success");
             }
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", relatorio.ProjetoId);
             return View(relatorio);
@@ -116,7 +119,11 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+
+                ViewBag.Title = "Relatório Editado";
+                ViewBag.Message = "Relatório Editado com Sucesso";
+                return View("Success");
+
             }
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", relatorio.ProjetoId);
             return View(relatorio);
@@ -149,7 +156,10 @@ namespace ProjetoGestao.Controllers
             var relatorio = await _context.Relatorio.FindAsync(id);
             _context.Relatorio.Remove(relatorio);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            ViewBag.Title = "Relatório Eliminado";
+            ViewBag.Message = "Relatório Eliminado com Sucesso";
+            return View("Success");
         }
 
         private bool RelatorioExists(int id)
