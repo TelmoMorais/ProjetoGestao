@@ -65,6 +65,7 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(projeto);
                 await _context.SaveChangesAsync();
+
                 ViewBag.Title = "Projeto Adicionado";
                 ViewBag.Message = "Projeto Adicionado com Sucesso";
                 return View("Success");
@@ -122,7 +123,10 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+
+                ViewBag.Title = "Projeto Editado";
+                ViewBag.Message = "Projeto Editado com Sucesso";
+                return View("Success");
             }
             ViewData["ClienteId"] = new SelectList(_context.Cliente, "ClienteId", "Apelido", projeto.ClienteId);
             ViewData["GestorId"] = new SelectList(_context.Gestor, "GestorId", "Apelido", projeto.GestorId);
@@ -157,7 +161,10 @@ namespace ProjetoGestao.Controllers
             var projeto = await _context.Projeto.FindAsync(id);
             _context.Projeto.Remove(projeto);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            ViewBag.Title = "Projeto Eliminado";
+            ViewBag.Message = "Projeto Eliminado com Sucesso";
+            return View("Success");
         }
 
         private bool ProjetoExists(int id)
