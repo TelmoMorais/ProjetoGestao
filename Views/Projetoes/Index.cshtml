@@ -72,6 +72,11 @@
                 <a asp-action="Delete" asp-route-id="@item.ProjetoId">Eliminar</a>
             </td>
         </tr>
-}
+}   
     </tbody>
 </table>
+<p>
+    <a asp-controller="Tarefas" asp-action="Index" class="btn btn-secondary">Tarefas</a>|
+    <a asp-controller="Relatorios" asp-action="Index" class="btn btn-secondary">Relatorio</a>
+    
+</p>
