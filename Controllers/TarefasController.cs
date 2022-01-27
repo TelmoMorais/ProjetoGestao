@@ -63,7 +63,9 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(tarefa);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Tarefa Adicionada";
+                ViewBag.Message = "Tarefa Adicionada com Sucesso";
+                return View("Success");
             }
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", tarefa.ProjetoId);
             return View(tarefa);
@@ -116,7 +118,9 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Tarefa Editada";
+                ViewBag.Message = "Tarefa Editada com Sucesso";
+                return View("Success");
             }
             ViewData["ProjetoId"] = new SelectList(_context.Projeto, "ProjetoId", "DataEfetivaFim", tarefa.ProjetoId);
             return View(tarefa);
@@ -149,7 +153,10 @@ namespace ProjetoGestao.Controllers
             var tarefa = await _context.Tarefa.FindAsync(id);
             _context.Tarefa.Remove(tarefa);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            ViewBag.Title = "Tarefa Eliminada";
+            ViewBag.Message = "Tarefa Eliminada com Sucesso";
+            return View("Success");
         }
 
         private bool TarefaExists(int id)
