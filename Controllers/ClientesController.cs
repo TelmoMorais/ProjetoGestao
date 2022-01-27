@@ -60,7 +60,9 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Cliente Adicionado";
+                ViewBag.Message = "Cliente Adicionado com Sucesso.";
+                return View("Success");
             }
             return View(cliente);
         }
@@ -111,7 +113,9 @@ namespace ProjetoGestao.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Cliente Editado";
+                ViewBag.Message = "Cliente Editado com Sucesso";
+                return View("Success");
             }
             return View(cliente);
         }
