@@ -11,7 +11,7 @@ namespace ProjetoGestao.Models
     {
         public int FuncaoId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Preencha o campo Função")]
         [StringLength(512)]
         public string NomeFuncao { get; set; }
 
