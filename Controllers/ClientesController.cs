@@ -146,7 +146,9 @@ namespace ProjetoGestao.Controllers
             var cliente = await _context.Cliente.FindAsync(id);
             _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            ViewBag.Title = "Cliente Eliminado";
+            ViewBag.Message = "Cliente Eliminado com Sucesso.";
+            return View("Success");
         }
 
         private bool ClienteExists(int id)

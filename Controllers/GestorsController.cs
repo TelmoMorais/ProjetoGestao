@@ -146,7 +146,9 @@ namespace ProjetoGestao.Controllers
             var gestor = await _context.Gestor.FindAsync(id);
             _context.Gestor.Remove(gestor);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            ViewBag.Title = "Gestor Eliminado";
+            ViewBag.Message = "Gestor Eliminado com Sucesso.";
+            return View("Success");
         }
 
         private bool GestorExists(int id)
