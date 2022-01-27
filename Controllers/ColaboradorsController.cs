@@ -63,7 +63,9 @@ namespace ProjetoGestao.Controllers
             {
                 _context.Add(colaborador);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                ViewBag.Title = "Gestor Adicionado";
+                ViewBag.Message = "Gestor Adicionado com  Sucesso";
+                return View("Success");
             }
             ViewData["FuncaoId"] = new SelectList(_context.Funcao, "FuncaoId", "NomeFuncao", colaborador.FuncaoId);
             return View(colaborador);
