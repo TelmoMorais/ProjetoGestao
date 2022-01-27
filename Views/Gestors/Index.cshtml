@@ -18,24 +18,27 @@
             <th>
                 @Html.DisplayNameFor(model => model.Apelido)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NumeroTelemovel)
-            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.NumeroTelemovel)
+        </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Email)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genero)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Endereco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ExperienciaComoGestor)
-            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExperienciaComoGestor)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.GestorId)
+        </th>
             <th></th>
         </tr>
     </thead>
@@ -48,23 +51,26 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Apelido)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumeroTelemovel)
-            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.NumeroTelemovel)
+        </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.DataNascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Endereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExperienciaComoGestor)
+        </td>*@
             <td>
-                @Html.DisplayFor(modelItem => item.DataNascimento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ExperienciaComoGestor)
+                @Html.DisplayFor(modelItem => item.GestorId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.GestorId">Editar</a> |
